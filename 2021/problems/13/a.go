@@ -8,8 +8,6 @@ func A(input []string) (interface{}, error) {
 	dots := getDotsFromInput(input)
 	folds := getFoldsFromInput(input)
 
-	//fmt.Println(prettyPrint(dots))
-
 	f := folds[0]
 	switch f.direction {
 	case "y":
@@ -37,8 +35,6 @@ func A(input []string) (interface{}, error) {
 			dots[i] = d
 		}
 	}
-
-	//fmt.Println(prettyPrint(dots))
 
 	dotsMap := make(map[string]bool)
 	for _, d := range dots {
